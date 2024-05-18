@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(40,219,228);
+    background: linear-gradient(0deg, rgba(40,219,228,1) 0%, rgba(149,62,227,1) 85%);
+}
+
+#calculator {
+    display: grid;
+    grid-template-areas:
+    "display display display display"
+    "C CE plus-minus divide"
+    "btn-7 btn-8 btn-9 mult"
+    "btn-4 btn-5 btn-6 minus"
+    "btn-1 btn-2 btn-3 plus"
+    "btn-dot btn-0 equals equals";
+    max-width: 600px;
+    font-size: 1.5em;
+    font-family: "Orbitron", sans-serif;
+    border-radius: 0.5em;
+}
+
+#display {
+    grid-area: display;
+    height: 3em;
+    background: white;
+    font-family: 'Calculator', sans-serif;
+    font-size: 1.7em;
+    text-align: end;
+    place-content: center;
+    padding: 0.5em;
+}
+
+#prev {
+    font-size: 0.6em;
+    color: gray;
+}
+
+.button {
+    text-align: center;
+    min-width: 3em;
+    height: 3em;
+    background: #6b8ebd;
+    border: 0.5px solid white;
+    place-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #4e72a2;
+}
+
+.btn-c {
+    grid-area: C;
+}
+
+.btn-ce {
+    grid-area: CE;
+}
+
+.btn-pm {
+    grid-area: plus-minus;
+}
+
+.btn-1 {
+    grid-area: btn-1;
+}
+
+.btn-2 {
+    grid-area: btn-2;
+}
+
+.btn-3 {
+    grid-area: btn-3;
+}
+
+.btn-4 {
+    grid-area: btn-4;
+}
+
+.btn-5 {
+    grid-area: btn-5;
+}
+
+.btn-6 {
+    grid-area: btn-6;
+}
+
+.btn-7 {
+    grid-area: btn-7;
+}
+
+.btn-8 {
+    grid-area: btn-8;
+}
+
+.btn-9 {
+    grid-area: btn-9;
+}
+
+.btn-0 {
+    grid-area: btn-0;
+}
+
+.btn-divide {
+    grid-area: divide;
+}
+
+.btn-mult {
+    grid-area: mult;
+}
+
+.btn-minus {
+    grid-area: minus;
+}
+
+.btn-plus {
+    grid-area: plus;
+}
+
+.btn-dot {
+    grid-area: btn-dot;
+}
+
+.btn-equals {
+    grid-area: equals;
+    background-color: #1da715;
+}
