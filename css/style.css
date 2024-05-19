@@ -21,7 +21,7 @@ body {
     background: linear-gradient(0deg, rgba(40,219,228,1) 0%, rgba(149,62,227,1) 85%);
 }
 
-#calculator {
+#calculator , #bulbulator{
     display: grid;
     grid-template-areas:
     "display display display display"
@@ -143,3 +143,30 @@ body {
     grid-area: equals;
     background-color: #1da715;
 }
+
+button{
+    margin: 20px;
+}
+
+#flip{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+#bulbulator{
+    display: none;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.back, .front{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+
