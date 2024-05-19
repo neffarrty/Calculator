@@ -9,61 +9,68 @@
     </head>
     <body>
         <div id="wrapper">
-            <button id="flip-btn">Calculator</button>
+            <button id="flip-btn">&#x27F2;</button>
             <div id="flip">
                 <div id="calculator" class="front">
                     <div id="display">
-                        <div id="prev"></div>
+                        <div id="previous"></div>
                         <div id="current">0</div>
                     </div>
-                        <div class="button btn-1">1</div>
-                        <div class="button btn-2">2</div>
-                        <div class="button btn-3">3</div>
-                        <div class="button btn-4">4</div>
-                        <div class="button btn-5">5</div>
-                        <div class="button btn-6">6</div>
-                        <div class="button btn-7">7</div>
-                        <div class="button btn-8">8</div>
-                        <div class="button btn-9">9</div>
-                        <div class="button btn-0">0</div>
-                        <div class="button btn-dot">.</div>
-                        <div class="button btn-divide">&#247;</div>
-                        <div class="button btn-mult">&#215;</div>
-                        <div class="button btn-plus">+</div>
-                        <div class="button btn-minus">&#8722;</div>
-                        <div class="button btn-equals">=</div>
-                        <div class="button btn-c">C</div>
-                        <div class="button btn-ce">CE</div>
-                        <div class="button btn-pm">+/&#8722;</div>
-                    </div>
-                <div class="back" id="bulbulator">
-                    <div id="display">
-                        <div id="prev"></div>
-                        <div id="current">0</div>
-                    </div>
-                        <div class="button btn-1">1</div>
-                        <div class="button btn-2">2</div>
-                        <div class="button btn-3">3</div>
-                        <div class="button btn-4">4</div>
-                        <div class="button btn-5">5</div>
-                        <div class="button btn-6">6</div>
-                        <div class="button btn-7">7</div>
-                        <div class="button btn-8">8</div>
-                        <div class="button btn-9">9</div>
-                        <div class="button btn-0">0</div>
-                        <div class="button btn-dot">.</div>
-                        <div class="button btn-divide">&#247;</div>
-                        <div class="button btn-mult">&#215;</div>
-                        <div class="button btn-plus">+</div>
-                        <div class="button btn-minus">&#8722;</div>
-                        <div class="button btn-equals">=</div>
-                        <div class="button btn-c">C</div>
-                        <div class="button btn-ce">CE</div>
-                        <div class="button btn-pm">+/&#8722;</div>
-                    </div>
+                    <div data-digit class="button btn-1">1</div>
+                    <div data-digit class="button btn-2">2</div>
+                    <div data-digit class="button btn-3">3</div>
+                    <div data-digit class="button btn-4">4</div>
+                    <div data-digit class="button btn-5">5</div>
+                    <div data-digit class="button btn-6">6</div>
+                    <div data-digit class="button btn-7">7</div>
+                    <div data-digit class="button btn-8">8</div>
+                    <div data-digit class="button btn-9">9</div>
+                    <div data-digit class="button btn-0">0</div>
+                    <div class="button btn-dot">.</div>
+                    <div data-operation class="button btn-divide">/</div>
+                    <div data-operation class="button btn-mult">*</div>
+                    <div data-operation class="button btn-plus">+</div>
+                    <div data-operation class="button btn-minus">-</div>
+                    <div data-equals class="button btn-equals">=</div>
+                    <div data-clear class="button btn-c">C</div>
+                    <div data-delete class="button btn-ce">CE</div>
+                    <div data-negate class="button btn-negate">+/&#8722;</div>
+                    <div data-operation class="button btn-sqrt">&#8730;</div>
+                    <div class="button btn-mr">MR</div>
+                    <div class="button btn-mc">MC</div>
+                    <div class="button btn-mplus">M+</div>
+                    <div class="button btn-mminus">M&#8722;</div>
+                </div>
+                <div class="back" id="converter">
+                    <label for="category-select">Select category</label>
+                    <select id="category-select">
+                        <option value="length" selected>length</option>
+                        <option value="weight">weights and masses</option>
+                        <option value="area">area</option>
+                        <option value="numeral">numeral systems</option>
+                    </select>
+                    <div id="converter-label">Length</div>
+                    <input type="number" id="value-input">
+                    <select id="from-select">
+                        <option value="length" selected>length</option>
+                        <option value="weight">weights and masses</option>
+                        <option value="area">area</option>
+                        <option value="numeral">numeral systems</option>
+                    </select>
+                    <div>to</div>
+                    <select id="to-select">
+                        <option value="length" selected>length</option>
+                        <option value="weight">weights and masses</option>
+                        <option value="area">area</option>
+                        <option value="numeral">numeral systems</option>
+                    </select>
+                    <input type="button" value="Convert">
+                    <input type="number" id="result-input" readonly>
                 </div>
             </div>
         </div>
         <script src="js/calculator.js"></script>
+        <script src="js/converter.js"></script>
+        <script src="js/animation.js"></script>
     </body>
 </html>
