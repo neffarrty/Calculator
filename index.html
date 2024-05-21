@@ -43,28 +43,19 @@
                 </div>
                 <div class="back" id="converter">
                     <label for="category-select">Select category</label>
-                    <select id="category-select">
+                    <select id="category-select" onchange="updateCategory()">
                         <option value="length" selected>length</option>
                         <option value="weight">weights and masses</option>
                         <option value="area">area</option>
-                        <option value="numeral">numeral systems</option>
                     </select>
                     <div id="converter-label">Length</div>
                     <input type="number" id="value-input">
                     <select id="from-select">
-                        <option value="length" selected>length</option>
-                        <option value="weight">weights and masses</option>
-                        <option value="area">area</option>
-                        <option value="numeral">numeral systems</option>
                     </select>
                     <div>to</div>
                     <select id="to-select">
-                        <option value="length" selected>length</option>
-                        <option value="weight">weights and masses</option>
-                        <option value="area">area</option>
-                        <option value="numeral">numeral systems</option>
                     </select>
-                    <input type="button" value="Convert">
+                    <input type="button" value="Convert" onclick="convert()">
                     <input type="number" id="result-input" readonly>
                 </div>
             </div>

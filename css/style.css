@@ -40,6 +40,11 @@ body {
 
 .back {
     transform: rotateY(180deg);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 #calculator {
@@ -186,4 +191,43 @@ button {
 
 #converter {
     display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    }
+
+#result-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
